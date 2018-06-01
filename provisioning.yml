@@ -1,0 +1,10 @@
+---
+- hosts: database
+  roles:
+    - mysql
+
+- hosts: wordpress
+  handlers:
+    # código do handler omitido...
+  roles:
+    - wordpress
